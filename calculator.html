@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="calculator.css">
+<body>
+    <h2>CALCULATOR</h2>
+    <header>
+        <center>
+        <input type="text" id="result" readonly>
+        </center>
+    </header>
+    <table>
+        
+        <tr>
+            <td><button onclick="clearResult('C')">C</button></td>
+            <td><button onclick="deleteNumber('D')">D</button></td>
+            <td><button onclick="setOperator('%')">%</button></td>
+            <td><button onclick="setOperator('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="b7" onclick="appendNumber(7)">7</button></td>
+            <td><button class="b8" onclick="appendNumber(8)">8</button></td>
+            <td><button class="b9" onclick="appendNumber(9)">9</button></td>
+            <td><button onclick="setOperator('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="b4" onclick="appendNumber(4)">4</button></td>
+            <td><button class="b5" onclick="appendNumber(5)">5</button></td>
+            <td><button class="b6" onclick="appendNumber(6)">6</button></td>
+            <td><button onclick="setOperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="b1" onclick="appendNumber(1)">1</button></td>
+            <td><button class="b2" onclick="appendNumber(2)">2</button></td>
+            <td><button class="b3" onclick="appendNumber(3)">3</button></td>
+            <td><button onclick="setOperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="setOperator('^')">^</button></td>
+            <td><button class="b0" onclick="appendNumber(0)">0</button></td>
+            <td><button onclick="appendNumber('.')">.</button></td>
+            <td><button class="op1" onclick="calculate('=')">=</button></td>            
+        </tr>
+    </table>
+</body>
+<script src="calculator.js"></script>
+</html>
